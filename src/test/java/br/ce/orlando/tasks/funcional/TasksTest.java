@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -87,5 +88,15 @@ public class TasksTest {
 		} finally {
 			driver.quit();
 		}
+	}
+	
+	@Test
+	public void googledo() throws InterruptedException{
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("chrome://downloads");
+		Thread.sleep(5000);
+		driver.quit();
+		
 	}
 }
