@@ -21,9 +21,9 @@ public class HealthCheckIT {
 	@Test
 	public void healthCheck() throws MalformedURLException {
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		WebDriver driver = new RemoteWebDriver(new URL(pcRemoteDriver), cap);
+		WebDriver driver = new RemoteWebDriver(new URL(noteRemoteDriver), cap);
 		try {
-			driver.navigate().to(pcNavigate);
+			driver.navigate().to(noteNavigate);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 			
 			String version = driver.findElement(By.id("version")).getText();
