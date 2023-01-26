@@ -13,7 +13,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TasksTest {
 	private String noteRemoteDriver = "http://172.26.185.107:4444/wd/hub";
-	private String noteNavigate = "http://172.26.185.107/:8001/tasks";
+	private String noteNavigate = "http://172.26.185.107:8001/tasks";
 	
 //	private String pcRemoteDriver = "http://192.168.18.80:4444/wd/hub";
 //	private String pcNavigate = "http://192.168.18.80:8001/tasks";
