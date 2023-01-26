@@ -12,17 +12,17 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TasksTest {
-//	private String noteRemoteDriver = "http://192.168.56.1:4444/wd/hub";
-//	private String noteNavigate = "http://192.168.56.1:8001/tasks";
+	private String noteRemoteDriver = "http://172.26.185.107:4444/wd/hub";
+	private String noteNavigate = "http://172.26.185.107/:8001/tasks";
 	
-	private String pcRemoteDriver = "http://192.168.18.80:4444/wd/hub";
-	private String pcNavigate = "http://192.168.18.80:8001/tasks";
+//	private String pcRemoteDriver = "http://192.168.18.80:4444/wd/hub";
+//	private String pcNavigate = "http://192.168.18.80:8001/tasks";
 	
 	public WebDriver acessarAplicacao() throws MalformedURLException {
 //		WebDriver driver = new ChromeDriver(); Local
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		WebDriver driver = new RemoteWebDriver(new URL(pcRemoteDriver), cap);
-		driver.navigate().to(pcNavigate);
+		WebDriver driver = new RemoteWebDriver(new URL(noteRemoteDriver), cap);
+		driver.navigate().to(noteNavigate);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
