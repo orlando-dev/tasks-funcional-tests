@@ -12,11 +12,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class HealthCheckIT {
-//	private String noteRemoteDriver = "http://192.168.18.72:4444/wd/hub";
-//	private String noteNavigate = "http://192.168.18.72:9999/tasks";
+	private String noteRemoteDriver = "http://172.26.185.107:4444/wd/hub";
+	private String noteNavigate = "http://172.26.185.107:9999/tasks";
 	
-	private String pcRemoteDriver = "http://192.168.18.80:4444/wd/hub";
-	private String pcNavigate = "http://192.168.18.80:9999/tasks";
+//	private String pcRemoteDriver = "http://192.168.18.80:4444/wd/hub";
+//	private String pcNavigate = "http://192.168.18.80:9999/tasks";
 
 	@Test
 	public void healthCheck() throws MalformedURLException {
