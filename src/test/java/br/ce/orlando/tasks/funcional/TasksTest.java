@@ -32,7 +32,7 @@ public class TasksTest {
 		WebDriver driver = acessarAplicacao();
 		try {
 			driver.findElement(By.id("addTodo")).click();
-			driver.findElement(By.id("task")).sendKeys("deveSalvarTarefaComSucesso - Test E2E");
+			driver.findElement(By.id("task")).sendKeys("deveSalvarTarefaComSucesso - Test E2E ");
 			driver.findElement(By.id("dueDate")).sendKeys("10/10/2030");
 			driver.findElement(By.id("saveButton")).click();
 
