@@ -27,7 +27,7 @@ public class HealthCheckIT {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 			
 			String version = driver.findElement(By.id("version")).getText();
-			Assert.assertTrue(version.startsWith("1.2.3"));
+			Assert.assertTrue(version.startsWith("1.3.0"));
 			
 		} finally  {
 			driver.quit();
